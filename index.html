@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbhy's Portfolio | Welcome</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container" id="header">
+        <h1 id="brand">Arbhy's</h1>
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="#intro" class="nav-link">Intro</a></li>
+                <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="img/icons/hamburger-menu.svg" alt="Hamburger Menu" id="hamburger-menu">
+    </header>
+
+    <main>
+        <section class="container" id="intro">
+            <h2 class="title">Chapter I - Introduction</h2>
+            <p class="main-desc" id="intro-desc">
+                Once upon a time, there was a man named <b>Arbhy Adityabrahma</b> who had a great interest on <b>front-end developement</b>. He was the man who once used to go to a vocational school, 
+                majoring Software Engineer. After he graduated, he found that he really loves building website’s user interface. Therefore, he determined to focusing his career to become 
+                <b>front-end developer</b>. This website was also the result of his hard work, so please, enjoy this website.
+            </p>
+            <img src="img/pattern/pattern_1.svg" alt="" class="pattern" id="wave-1">
+
+            <div class="arbhy-pict">
+                <img src="img/arbhy.png" alt="" id="arbhy-normal">
+                <img src="img/arbhy_glared.png" alt="" id="arbhy-glared">
+            </div>
+        </section>
+
+        <section class="container" id="works">
+            <h2 class="title">Chapter II - Arbhy's Works</h2>
+            <p class="main-desc">
+                Let’s get straight to the point, this chapter is going to show you Arbhy’s highlight works. The works will be divided into front-end and back-end developements.
+            </p>
+
+            <section id="fe-project" data-aos="fade-left">
+                <h3 class="sub-title">II.I. Front-End Project</h3>
+
+                <a href="#" class="project" id="samsung">
+                    <h4 class="project-name">Samsung Landing Page <span>(2020)</span></h4>
+                    <p class="project-desc">Made with only CSS</p>
+                </a>
+                <a href="#" class="project" id="minima">
+                    <h4 class="project-name">MINIMA <span>(2021)</span></h4>
+                    <p class="project-desc">Made with SCSS and AOS</p>
+                </a>
+                <a href="https://github.com/rocketweaver/PhoenixWebsite" class="project" id="phoenix">
+                    <h4 class="project-name">Phoenix <span>(2021)</span></h4>
+                    <p class="project-desc">Made with only SCSS, JQuery, Slick.js, and Tilt.js</p>
+                </a>
+            </section>
+
+            <section id="be-project" data-aos="fade-right">
+                <h3 class="sub-title">II.II. Back-End Project</h3>
+
+                <a href="https://ujikom-pembayaran-spp.herokuapp.com/" class="project" id="pembayaran-spp">
+                    <h4 class="project-name">Pembayaran SPP <span>(2021)</span></h4>
+                    <p class="project-desc">Made with Laravel 8</p>
+                </a>
+            </section>
+            <img src="img/pattern/pattern_2.svg" class="pattern" id="wave-2" alt="">
+        </section>
+
+        <section class="container" id="contact">
+            <div class="title" id="contact-title">Contact</div>
+            <div id="contact-form">
+                <input type="text" name="name" placeholder="Type your name here..." required autocomplete="off" class="input-form" id="name">
+                <input type="email" name="email" placeholder="Type your email here..." required autocomplete="off" class="input-form" id="email">
+                <textarea name="message" placeholder="Type your message here..." class="input-form" id="msg"></textarea>
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container" id="footer">
+        <p id="copyright">&copy;2021, Arbhy Adityabrahma</p>
+        <ul id="icon-list">
+            <li class="icon-item"><a href="https://www.linkedin.com/in/arbhyadityab/" class="icon-link"><img src="img/icons/iconmonstr-linkedin-3 1.svg" class="icon-img"></a></li>
+            <li class="icon-item"><a href="" class="icon-link"><img src="img/icons/iconmonstr-github-3 1.svg" class="icon-img"></a></li>
+        </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

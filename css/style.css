@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --white: #EEEDE9;
+  --black: #212121;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif, Times;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1.5px;
+}
+
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: var(--white);
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 5% 10%;
+}
+
+#header, #nav-list, .project, #icon-list, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#brand, .title, .sub-title, .project-name {
+  font-family: "Playfair Display", Times;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.sub-title, #intro-desc b {
+  font-size: 24px;
+}
+
+.main-desc, a, .project-name {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.main-desc {
+  line-height: 40px;
+}
+
+.pattern {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#header {
+  padding: 0 10%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#navbar {
+  width: 20%;
+  padding-top: 25px;
+}
+
+#brand {
+  position: relative;
+  top: -2px;
+}
+
+.nav-link {
+  text-align: center;
+  position: relative;
+}
+
+.nav-link::before {
+  position: absolute;
+  content: "";
+  top: 55%;
+  height: 1.5px;
+  width: 100%;
+  background: var(--black);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+.nav-link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#intro {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  height: 100vh;
+  position: relative;
+}
+
+#arbhy-normal, #arbhy-glared {
+  z-index: 2;
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  bottom: -100px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+#arbhy-glared {
+  opacity: 0;
+}
+
+.arbhy-pict:hover #arbhy-glared {
+  opacity: 1;
+}
+
+.arbhy-pict:hover #arbhy-normal {
+  opacity: 0;
+}
+
+#works {
+  z-index: 1;
+  padding-top: 10%;
+  padding-bottom: 30%;
+  background: var(--black);
+  color: var(--white);
+  position: relative;
+}
+
+#fe-project {
+  margin-top: 80px;
+}
+
+.project {
+  padding: 2em 0;
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+  -webkit-transition: background .5s ease-in-out, padding .75s ease-in-out;
+  transition: background .5s ease-in-out, padding .75s ease-in-out;
+}
+
+.project:hover {
+  padding: 2em 3em;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.project-name span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.project-desc {
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  text-align: right;
+}
+
+#samsung, #pembayaran-spp {
+  margin-top: 40px;
+}
+
+#samsung:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(33, 33, 33, 0.5)), to(rgba(33, 33, 33, 0.5))), url("../img/project/samsung.PNG");
+  background: linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url("../img/project/samsung.PNG");
+}
+
+#minima:hover {
+  background: url("../img/project/minima.PNG");
+}
+
+#phoenix:hover {
+  background: url("../img/project/phoenix.PNG");
+}
+
+#be-project {
+  margin-top: 60px;
+}
+
+#pembayaran-spp:hover {
+  background: url("../img/project/pembayaran_spp.PNG");
+}
+
+#contact {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#contact-title {
+  text-align: center;
+}
+
+.input-form, #submit-btn {
+  margin-top: 20px;
+  padding: 1em;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  -webkit-transition: border-bottom .5s ease-in-out;
+  transition: border-bottom .5s ease-in-out;
+}
+
+.input-form:focus {
+  outline: 0;
+  border-color: var(--black);
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+#name {
+  margin-top: 40px;
+}
+
+#submit-btn {
+  margin-top: 30px;
+  border: none;
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid var(--black);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  background: none;
+  color: var(--black);
+}
+
+#footer {
+  padding: 1em 10%;
+  color: var(--white);
+  background: var(--black);
+}
+
+#icon-list {
+  padding-top: 20px;
+  width: 6%;
+}
+
+.icon-img {
+  width: 30px;
+}
+
+#hamburger-menu {
+  width: 24px;
+  height: auto;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar {
+    width: 40%;
+  }
+  #intro {
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+  #works {
+    padding-top: 20%;
+  }
+  #icon-list {
+    width: 10%;
+    padding-top: 15px;
+  }
+  .icon-img {
+    width: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background: var(--white) !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #navbar {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 50%;
+    height: 92vh;
+    background: var(--white);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  }
+  #nav-list {
+    height: 100%;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-item {
+    margin: 40px 0;
+  }
+  #hamburger-menu {
+    display: block;
+  }
+  .project-desc {
+    top: 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #brand {
+    position: relative;
+    top: 20px !important;
+    font-size: 18px;
+  }
+  #intro {
+    padding-top: 25%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .main-desc {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #intro-desc b, .sub-title {
+    font-size: 18px;
+  }
+  #arbhy-normal, #arbhy-glared {
+    width: 40%;
+  }
+  #works {
+    padding-top: 30%;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project:hover {
+    padding: 2em 0;
+  }
+  .project-name {
+    font-size: 14px;
+  }
+  .project-name, .project-desc {
+    text-align: center;
+  }
+  ::-webkit-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  :-ms-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  ::-ms-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  ::placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #icon-list {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+  .icon-img {
+    margin: 0 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
