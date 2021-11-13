@@ -148,13 +148,13 @@ a {
 }
 
 #navbar {
-  width: 15%;
+  width: 20%;
   padding-top: 25px;
 }
 
 #brand {
   position: relative;
-  top: -2px;
+  top: -5px;
 }
 
 .nav-link {
