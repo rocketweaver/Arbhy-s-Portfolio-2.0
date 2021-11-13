@@ -18,6 +18,7 @@ html, body {
   background: var(--white);
   color: var(--black);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 main {
@@ -99,6 +100,7 @@ a {
           justify-content: space-between;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 9999;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
@@ -391,6 +393,18 @@ a {
   #hamburger-menu {
     width: 16px;
   }
+  .nav-link, .main-desc, ::-webkit-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  .nav-link, .main-desc, :-ms-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  .nav-link, .main-desc, ::-ms-input-placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
+  .nav-link, .main-desc, ::placeholder, .input-form, #submit-btn {
+    font-size: 16px;
+  }
   #intro {
     padding-top: 25%;
   }
@@ -398,7 +412,6 @@ a {
     font-size: 24px;
   }
   .main-desc {
-    font-size: 16px;
     line-height: 30px;
   }
   #intro-desc b, .sub-title {
@@ -419,23 +432,11 @@ a {
   .project:hover {
     padding: 2em 0;
   }
-  .project-name {
+  .project-name, #copyright {
     font-size: 14px;
   }
   .project-name, .project-desc {
     text-align: center;
-  }
-  ::-webkit-input-placeholder, .input-form, #submit-btn {
-    font-size: 16px;
-  }
-  :-ms-input-placeholder, .input-form, #submit-btn {
-    font-size: 16px;
-  }
-  ::-ms-input-placeholder, .input-form, #submit-btn {
-    font-size: 16px;
-  }
-  ::placeholder, .input-form, #submit-btn {
-    font-size: 16px;
   }
   footer {
     -webkit-box-orient: vertical;
@@ -450,7 +451,6 @@ a {
             justify-content: center;
   }
   #copyright {
-    font-size: 14px;
     text-align: center;
   }
   .icon-img {

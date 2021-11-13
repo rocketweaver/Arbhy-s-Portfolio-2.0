@@ -19,6 +19,7 @@ html, body {
     background: var(--white);
     color: var(--black);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main {
@@ -89,6 +90,7 @@ a {
     justify-content: space-between;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 9999;
     transition: all .25s ease-in-out;
 }
@@ -364,6 +366,10 @@ a {
         width: 16px;
     }
 
+    .nav-link, .main-desc, ::placeholder, .input-form, #submit-btn {
+        font-size: 16px;
+    }
+
     #intro {
         padding-top: 25%;
     }
@@ -373,7 +379,6 @@ a {
     }
 
     .main-desc {
-        font-size: 16px;
         line-height: 30px;
     }
 
@@ -397,16 +402,12 @@ a {
         padding: 2em 0;
     }
 
-    .project-name {
+    .project-name, #copyright {
         font-size: 14px;
     }
 
     .project-name, .project-desc {
         text-align: center;
-    }
-
-    ::placeholder, .input-form, #submit-btn {
-        font-size: 16px;
     }
 
     footer {
@@ -419,7 +420,6 @@ a {
     }
 
     #copyright {
-        font-size: 14px;
         text-align: center;
     }
 
