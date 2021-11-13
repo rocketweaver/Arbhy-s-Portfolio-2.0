@@ -352,7 +352,7 @@ a {
     right: 0;
     top: 80px;
     width: 50%;
-    height: 92vh;
+    height: 100vh;
     background: var(--white);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -378,6 +378,9 @@ a {
   #hamburger-menu {
     display: block;
   }
+  #arbhy-normal, #arbhy-glared {
+    width: 40%;
+  }
   .project-desc {
     top: 15px;
     font-size: 14px;
@@ -385,13 +388,19 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  #header {
+    height: 48px;
+  }
   #brand {
     position: relative;
-    top: 20px !important;
     font-size: 18px;
   }
   #hamburger-menu {
     width: 16px;
+  }
+  #navbar {
+    top: 48px;
+    height: 100vh;
   }
   .nav-link, .main-desc, ::-webkit-input-placeholder, .input-form, #submit-btn {
     font-size: 16px;
@@ -416,9 +425,6 @@ a {
   }
   #intro-desc b, .sub-title {
     font-size: 18px;
-  }
-  #arbhy-normal, #arbhy-glared {
-    width: 40%;
   }
   #works {
     padding-top: 30%;
