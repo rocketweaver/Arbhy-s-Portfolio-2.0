@@ -82,7 +82,31 @@ a {
     color: var(--black);
 }
 
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    background: var(--black);
+    animation: loading 1s ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        transform: scaleX(0);
+    } 100% {
+        transform: scaleX(1);
+    }
+}
+
 //Header
+.active {
+    background: red;
+}
+
 #header {
     padding: 0 10%;
     height: 80px;
@@ -96,7 +120,7 @@ a {
 }
 
 #navbar {
-    width: 20%;
+    width: 15%;
     padding-top: 25px;
 }
 
@@ -135,7 +159,7 @@ a {
     position: relative;
 }
 
-#arbhy-normal, #arbhy-glared {
+#arbhy-normal, #arbhy-speech {
     z-index: 2;
     width: 20vw;
     position: absolute;
@@ -145,15 +169,15 @@ a {
     transition: opacity .5s ease-in-out;
 }
 
-#arbhy-glared {
+#arbhy-speech {
     opacity: 0;
 }
 
-.arbhy-pict:hover #arbhy-glared {
+.arbhy-card:hover #arbhy-speech {
     opacity: 1;
 }
 
-.arbhy-pict:hover #arbhy-normal {
+.arbhy-card:hover #arbhy-normal {
     opacity: 0;
 }
 
@@ -230,19 +254,35 @@ a {
     text-align: center;
 }
 
-.input-form, #submit-btn {
+.form-group {
+    width: 100%;
+    height: 45px;
     margin-top: 20px;
+    position: relative;
+}
+
+.form-group:nth-child(1) {
+    margin-top: 80px;
+}
+
+#textarea-form {
+    height: 80px;
+}
+
+.input-form, #submit-btn {
     padding: 1em;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid gray;
+    border-bottom: 3px solid gray;
     transition: border-bottom .5s ease-in-out;
 }
 
-
-.input-form:focus {
-    outline: 0;
-    border-color: var(--black);
+.input-form {
+    height: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
 }
 
 ::placeholder {
@@ -251,6 +291,31 @@ a {
 
 #name {
     margin-top: 40px;
+}
+
+#msg {
+    resize: none;
+}
+
+.focus-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--black);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .5s ease-in-out;
+}
+
+.input-form:focus {
+    outline: 0;
+}
+
+.input-form:focus + .focus-underline {
+    outline: 0;
+    transform: scaleX(1);
 }
 
 #submit-btn {
@@ -316,7 +381,7 @@ a {
         width: 24px;
     }
 
-    #arbhy-glared, #arbhy-normal {
+    #arbhy-speech, #arbhy-normal {
         width: 30vw;
     }
 }
@@ -353,7 +418,7 @@ a {
         display: block;
     }
 
-    #arbhy-glared, #arbhy-normal {
+    #arbhy-speech, #arbhy-normal {
         width: 30vw;
     }
 
@@ -403,7 +468,7 @@ a {
         font-size: 18px;
     }
 
-    #arbhy-glared, #arbhy-normal {
+    #arbhy-speech, #arbhy-normal {
         width: 45vw;
     }
 

@@ -3,16 +3,16 @@ AOS.init({
 });
 
 $(document).ready(function(){
+    //All on scroll animation
     $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
+        //Animating navigation menu
+        const scroll = $(window).scrollTop();
         if (scroll > 20) {
             $("#header").css({
                 "background" : "var(--white)",
                 "box-shadow" : "4px 4px 12px rgba(62, 37, 0, 0.151)"
             });
-        }
-    
-        else{
+        } else {
             $("#header").css({
                 "background" : "none",
                 "box-shadow" : "none"
@@ -20,6 +20,7 @@ $(document).ready(function(){
         }
     });
 
+    //Animating hamburger menu
     let bool = false;
     $('#hamburger-menu').on('click', function() {
         if(bool == false) {
@@ -36,4 +37,12 @@ $(document).ready(function(){
         });
         }
     });
-})
+
+    //Sound effect for some elements
+    const clickedBtnSound = new Audio('sound/mouse_click.mp3');
+    const hoverNavLinkSound = new Audio('sound/ink_pen_writing.mp3');
+    const swingSound = new Audio('sound/swing.mp3');
+    $('#submit-btn').click(e => clickedBtnSound.play());
+    $('.nav-link').mouseover(e => hoverNavLinkSound.play());
+    $('.project').mouseover(e => swingSound.play());
+});
