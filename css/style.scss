@@ -130,14 +130,14 @@ a {
 //Introduction section
 #intro {
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
     height: 100vh;
     position: relative;
 }
 
 #arbhy-normal, #arbhy-glared {
     z-index: 2;
-    width: 20%;
+    width: 20vw;
     position: absolute;
     left: 50%;
     bottom: -100px;
@@ -299,8 +299,8 @@ a {
     }
 
     #intro {
-        padding-top: 10%;
-        padding-bottom: 20%;
+        padding-top: 20%;
+        padding-bottom: 900px;
     }
 
     #works {
@@ -314,6 +314,10 @@ a {
 
     .icon-img {
         width: 24px;
+    }
+
+    #arbhy-glared, #arbhy-normal {
+        width: 30vw;
     }
 }
 
@@ -349,8 +353,8 @@ a {
         display: block;
     }
 
-    #arbhy-normal, #arbhy-glared {
-        width: 40%;
+    #arbhy-glared, #arbhy-normal {
+        width: 30vw;
     }
 
     .project-desc {
@@ -383,7 +387,8 @@ a {
     }
 
     #intro {
-        padding-top: 25%;
+        padding-top: 20%;
+        padding-bottom: 900px;
     }
 
     .title {
@@ -398,8 +403,12 @@ a {
         font-size: 18px;
     }
 
+    #arbhy-glared, #arbhy-normal {
+        width: 45vw;
+    }
+
     #works {
-        padding-top: 30%;
+        padding-top: 40%;
     }
 
     .project {
