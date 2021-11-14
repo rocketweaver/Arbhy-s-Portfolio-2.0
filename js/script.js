@@ -42,7 +42,7 @@ $(document).ready(function(){
     const clickedBtnSound = new Audio('sound/mouse_click.mp3');
     const hoverNavLinkSound = new Audio('sound/ink_pen_writing.mp3');
     const swingSound = new Audio('sound/swing.mp3');
-    $('#submit-btn').click(e => clickedBtnSound.play());
     $('.nav-link').mouseover(e => hoverNavLinkSound.play());
     $('.project').mouseover(e => swingSound.play());
+    $('#submit-btn').click(e => clickedBtnSound.play());
 });

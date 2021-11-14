@@ -197,8 +197,8 @@ a {
 }
 
 #intro {
-  padding-top: 5%;
-  padding-bottom: 50%;
+  padding-top: 100px;
+  padding-bottom: 55%;
   height: 100vh;
   position: relative;
 }
@@ -406,8 +406,15 @@ a {
 }
 
 #icon-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 20px;
   width: 6%;
+}
+
+.icon-item:not(#github) {
+  margin-right: 30px;
 }
 
 .icon-img {
@@ -470,12 +477,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .nav-item {
-    margin: 40px 0;
+  .nav-item, #contact {
+    margin: 40px 0 !important;
   }
   #hamburger-menu {
     display: block;
@@ -558,15 +562,16 @@ a {
   }
   #icon-list {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-top: 5px;
   }
   #copyright {
     text-align: center;
   }
+  #linkedin {
+    margin-right: 0;
+  }
   .icon-img {
-    margin: 0 15px;
+    margin: 0 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
