@@ -129,6 +129,14 @@ a {
     top: -5px;
 }
 
+#nav-list {
+    justify-content: center;
+}
+
+.nav-item:not(#nav-contact) {
+    margin-right: 40px;
+}
+
 .nav-link {
     text-align: center;
     position: relative;
@@ -154,7 +162,7 @@ a {
 //Introduction section
 #intro {
     padding-top: 5%;
-    padding-bottom: 30%;
+    padding-bottom: 50%;
     height: 100vh;
     position: relative;
 }
