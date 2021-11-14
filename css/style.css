@@ -198,7 +198,7 @@ a {
 
 #intro {
   padding-top: 100px;
-  padding-bottom: 55%;
+  padding-bottom: 52%;
   height: 100vh;
   position: relative;
 }
@@ -225,6 +225,10 @@ a {
 
 .arbhy-card:hover #arbhy-normal {
   opacity: 0;
+}
+
+#wave-2 {
+  display: none;
 }
 
 #works {
@@ -434,6 +438,12 @@ a {
   #intro {
     padding-top: 20%;
     padding-bottom: 900px;
+  }
+  #wave-2 {
+    display: block;
+  }
+  #wave-1 {
+    display: none;
   }
   #works {
     padding-top: 20%;
