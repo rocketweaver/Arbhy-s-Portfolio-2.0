@@ -27,21 +27,21 @@ $(document).ready(function(){
         bool = true;
         $('#navbar').css('transform', 'translateX(0)');
         $('#hamburger-menu').fadeOut(function() {
-            $(this).attr('src', 'img/icons/exit-menu.svg').fadeIn();
+            $(this).attr('src', 'asset/img/icons/exit-menu.svg').fadeIn();
         });
         } else {
         bool = false;
         $('#navbar').css('transform', 'translateX(100%)');
         $('#hamburger-menu').fadeOut(function() {
-            $(this).attr('src', 'img/icons/hamburger-menu.svg').fadeIn();
+            $(this).attr('src', 'asset/img/icons/hamburger-menu.svg').fadeIn();
         });
         }
     });
 
     //Sound effect for some elements
-    const clickedBtnSound = new Audio('sound/mouse_click.mp3');
-    const hoverNavLinkSound = new Audio('sound/ink_pen_writing.mp3');
-    const swingSound = new Audio('sound/swing.mp3');
+    const clickedBtnSound = new Audio('asset/sound/mouse_click.mp3');
+    const hoverNavLinkSound = new Audio('asset/sound/ink_pen_writing.mp3');
+    const swingSound = new Audio('asset/sound/swing.mp3');
     $('.nav-link').mouseover(e => hoverNavLinkSound.play());
     $('.project').mouseover(e => swingSound.play());
     $('#submit-btn').click(e => clickedBtnSound.play());

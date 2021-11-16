@@ -159,6 +159,12 @@ a {
     transform-origin: left;
 }
 
+#hamburger-menu {
+    width: 24px;
+    height: auto;
+    display: none;
+}
+
 //Introduction section
 #intro {
     padding-top: 100px;
@@ -364,13 +370,14 @@ a {
 }
 
 .icon-img {
+    position: relative;
     width: 30px;
+    top: 0;
+    transition: top .25s ease-in-out;
 }
 
-#hamburger-menu {
-    width: 24px;
-    height: auto;
-    display: none;
+.icon-img:hover {
+    top: -2px;
 }
 
 //Media screen
