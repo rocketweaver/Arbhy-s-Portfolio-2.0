@@ -246,12 +246,8 @@ a {
     text-align: right;
 }
 
-#samsung, #pembayaran-spp {
+#minima, #aristotle-institute, #pembayaran-spp {
     margin-top: 40px;
-}
-
-#samsung:hover {
-    background: linear-gradient(0deg, rgba(33, 33, 33, 0.5), rgba(33, 33, 33, 0.5)), url('../img/project/samsung.PNG');
 }
 
 #minima:hover {
@@ -262,7 +258,19 @@ a {
     background: url('../img/project/phoenix.PNG');
 }
 
-#be-project {
+#aristotle-institute:hover {
+    background: url('../img/project/aristotle_institute.png');
+}
+
+#atf-collection:hover {
+    background: url('../img/project/above_the_folds.PNG');
+}
+
+#ron88:hover {
+    background: url('../img/project/ron88.png');
+}
+
+#be-project, #uiux-project {
     margin-top: 60px;
 }
 
