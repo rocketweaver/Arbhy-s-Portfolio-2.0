@@ -1,6 +1,15 @@
+//Calling AOS
 AOS.init({
     duration: 1500
 });
+
+//Sound effect for some elements
+const clickedBtnSound = new Audio('asset/sound/mouse_click.mp3');
+const hoverNavLinkSound = new Audio('asset/sound/ink_pen_writing.mp3');
+const swingSound = new Audio('asset/sound/swing.mp3');
+$('.nav-link').mouseover(e => hoverNavLinkSound.play());
+$('.project').mouseover(e => swingSound.play());
+$('#submit-btn').click(e => clickedBtnSound.play());
 
 $(document).ready(function(){
     //All on scroll animation
@@ -37,12 +46,4 @@ $(document).ready(function(){
         });
         }
     });
-
-    //Sound effect for some elements
-    const clickedBtnSound = new Audio('asset/sound/mouse_click.mp3');
-    const hoverNavLinkSound = new Audio('asset/sound/ink_pen_writing.mp3');
-    const swingSound = new Audio('asset/sound/swing.mp3');
-    $('.nav-link').mouseover(e => hoverNavLinkSound.play());
-    $('.project').mouseover(e => swingSound.play());
-    $('#submit-btn').click(e => clickedBtnSound.play());
 });
