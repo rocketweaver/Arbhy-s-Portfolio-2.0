@@ -104,6 +104,11 @@ a {
           animation: loading 1s ease-in-out;
 }
 
+#intro {
+  background: url("../img/background-default.svg");
+  background-size: cover;
+}
+
 @-webkit-keyframes loading {
   0% {
     -webkit-transform: scaleX(0);
@@ -206,6 +211,9 @@ a {
   padding-top: 100px;
   padding-bottom: 52%;
   height: 100vh;
+  background: url("../img/background-default.svg");
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -496,7 +504,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nav-item, #contact {
+  .nav-item, #contact-title {
     margin: 40px 0 !important;
   }
   #hamburger-menu {
