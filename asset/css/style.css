@@ -533,6 +533,7 @@ a {
   #brand {
     position: relative;
     font-size: 18px;
+    top: 0;
   }
   #hamburger-menu {
     width: 16px;
