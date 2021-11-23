@@ -443,7 +443,7 @@ a {
     #navbar {
         position: absolute;
         right: 0;
-        top: 80px;
+        bottom: 0;
         width: 50%;
         height: 100vh;
         background: var(--white);
@@ -525,11 +525,13 @@ a {
     }
 
     .project {
+        padding: 0 0 1.5em 0;
         flex-direction: column;
     }
 
     .project:hover {
-        padding: 2em 0;
+        padding: 0 0 1.5em 0;
+        padding-left: 1em;
     }
 
     .project-name, #copyright {
@@ -537,7 +539,7 @@ a {
     }
 
     .project-name, .project-desc {
-        text-align: center;
+        text-align: left;
     }
 
     footer {

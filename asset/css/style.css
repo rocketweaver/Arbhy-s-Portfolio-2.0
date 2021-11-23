@@ -492,7 +492,7 @@ a {
   #navbar {
     position: absolute;
     right: 0;
-    top: 80px;
+    bottom: 0;
     width: 50%;
     height: 100vh;
     background: var(--white);
@@ -574,19 +574,21 @@ a {
     padding-top: 40%;
   }
   .project {
+    padding: 0 0 1.5em 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .project:hover {
-    padding: 2em 0;
+    padding: 0 0 1.5em 0;
+    padding-left: 1em;
   }
   .project-name, #copyright {
     font-size: 14px;
   }
   .project-name, .project-desc {
-    text-align: center;
+    text-align: left;
   }
   footer {
     -webkit-box-orient: vertical;
