@@ -217,7 +217,7 @@ a {
   position: relative;
 }
 
-#arbhy-normal, #arbhy-speech {
+#arbhy-normal {
   z-index: 2;
   width: 20vw;
   position: absolute;
@@ -227,18 +227,6 @@ a {
           transform: translateX(-50%);
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
-}
-
-#arbhy-speech {
-  opacity: 0;
-}
-
-.arbhy-card:hover #arbhy-speech {
-  opacity: 1;
-}
-
-.arbhy-card:hover #arbhy-normal {
-  opacity: 0;
 }
 
 #wave-2 {
@@ -288,8 +276,8 @@ a {
   margin-top: 40px;
 }
 
-#minima:hover {
-  background: url("../img/project/minima.PNG");
+#deliziosa:hover {
+  background: url("../img/project/deliziosa.JPG");
 }
 
 #phoenix:hover {
@@ -314,6 +302,14 @@ a {
 
 #pembayaran-spp:hover {
   background: url("../img/project/pembayaran_spp.PNG");
+}
+
+#ticket-concert:hover {
+  background: url("../img/project/ticketconcert.png");
+}
+
+#tanyakode:hover {
+  background: url("../img/project/tanyakode.png");
 }
 
 #contact {
