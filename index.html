@@ -1,107 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arbhy's Portfolio | Welcome</title>
     <!-- Load some CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/style.css">
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
     <!-- For onload animation purpose -->
     <div id="progress-bar"></div>
 
     <!-- Navigation menu -->
     <header class="container" id="header">
-        <h1 id="brand">Arbhy's</h1>
-        <nav id="navbar">
-            <ul id="nav-list">
-                <li class="nav-item" id="nav-intro"><a href="#intro" class="nav-link">Intro</a></li>
-                <li class="nav-item" id="nav-works"><a href="#works" class="nav-link">Works</a></li>
-                <li class="nav-item" id="nav-contact"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 id="brand">Arbhy's</h1>
+      <nav id="navbar">
+        <ul id="nav-list">
+          <li class="nav-item" id="nav-intro">
+            <a href="#intro" class="nav-link">Intro</a>
+          </li>
+          <li class="nav-item" id="nav-works">
+            <a href="#works" class="nav-link">Works</a>
+          </li>
+          <li class="nav-item" id="nav-contact">
+            <a href="#footer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Only shown in mobile -->
-        <img src="asset/img/icons/hamburger-menu.svg" alt="Hamburger Menu" id="hamburger-menu">
+      <!-- Only shown in mobile -->
+      <img
+        src="asset/img/icons/hamburger-menu.svg"
+        alt="Hamburger Menu"
+        id="hamburger-menu"
+      />
     </header>
 
     <main>
-        <!-- Intro -->
-        <section class="container" id="intro">
-            <h2 class="title">Chapter I - Introduction</h2>
-            <p class="main-desc" id="intro-desc">
-               Apparently there was a man by the name of <b>Arbhy Adityabrahma</b> who was very interested in <b>front-end development</b>. 
-                He was the man who had previously majored in software engineering at a vocational school. He discovered after graduating that he truly enjoys creating the user experience for websites. He made the decision to concentrate on becoming a 
-                <b>front-end developer</b> as a result. Enjoy this website; it was likewise the product of his labor of love.
+      <!-- Intro -->
+      <section class="container" id="intro">
+        <h2 class="title">Chapter I - Introduction</h2>
+        <p class="main-desc" id="intro-desc">
+          Meet <b>Arbhy Adityabrahma</b>, a passionate
+          <b>front-end developer</b> with a flair for crafting captivating
+          digital experiences. With a background in software engineering from a
+          vocational school, I discovered my true calling after graduation -
+          designing seamless user interfaces that leave a lasting impression.
+          Dive into this website; it's a labor of love, meticulously created to
+          enchant and engage.
+        </p>
+        <!-- Some alt attribute is intentionally emptied, so it shows nothing when error comes. Since the image isn't really important. -->
+        <img
+          src="asset/img/pattern/pattern_3.svg"
+          alt=""
+          class="pattern"
+          id="wave-1"
+        />
+        <img
+          src="asset/img/pattern/pattern_1.svg"
+          alt=""
+          class="pattern"
+          id="wave-2"
+        />
+
+        <div class="arbhy-card">
+          <img src="asset/img/arbhy_1.png" alt="" id="arbhy-normal" />
+        </div>
+      </section>
+      <!-- Works -->
+      <section class="container" id="works">
+        <h2 class="title">Chapter II - My Works</h2>
+        <p class="main-desc">
+          Welcome to the "My Works" section. Here, you'll find a collection of
+          my projects. These projects showcase my progress and skills in web
+          development. From front-end to back-end, each one represents a step
+          forward in my learning journey. Take a look around and explore what
+          I've been working on.
+        </p>
+
+        <div class="project-list">
+          <button class="project-item fe-btn project-active">Front-End</button>
+          <button class="project-item be-btn">Back-End</button>
+        </div>
+
+        <!-- Front-End Project -->
+        <section id="fe-project" data-aos="fade-left">
+          <!-- <h3 class="sub-title">II.I. Front-End Project</h3> -->
+          <a
+            href="https://github.com/rocketweaver/PhoenixWebsite"
+            target="_blank"
+            class="project"
+            id="phoenix"
+          >
+            <h4 class="project-name">Phoenix <span>(2021)</span></h4>
+            <p class="project-desc">
+              Made with SCSS, JQuery, Slick.js, and Tilt.js
             </p>
-             <!-- Some alt attribute is intentionally emptied, so it shows nothing when error comes. Since the image isn't really important. -->
-            <img src="asset/img/pattern/pattern_3.svg" alt="" class="pattern" id="wave-1">
-            <img src="asset/img/pattern/pattern_1.svg" alt="" class="pattern" id="wave-2">
-
-            <div class="arbhy-card">
-                <img src="asset/img/arbhy.png" alt="" id="arbhy-normal">
-            </div>
-        </section>
-        <!-- Works -->
-        <section class="container" id="works">
-            <h2 class="title">Chapter II - Arbhy's Works</h2>
-            <p class="main-desc">
-                Let's go right to the point; this chapter will demonstrate how Arbhy's standout pieces of work. The projects will be broken down into his back-end, UI/UX, and front-end projects.
-            </p>
-
-            <!-- Front-End Project -->
-            <section id="uiux-project" data-aos="fade-left">
-                <h3 class="sub-title">II.I. Front-End Project</h3>
-                <a href="https://github.com/rocketweaver/PhoenixWebsite" target="_blank" class="project" id="phoenix">
-                    <h4 class="project-name">Phoenix <span>(2021)</span></h4>
-                    <p class="project-desc">Made with SCSS, JQuery, Slick.js, and Tilt.js</p>
-                </a>
-                <a href="https://rocketweaver.github.io/deliziosa_resto-reservation/" target="_blank" class="project" id="deliziosa">
-                    <h4 class="project-name">Deliziosa <span>(2023)</span></h4>
-                    <p class="project-desc">Made with HTML, CSS, Bootstrap 5, and JS</p>
-                </a>
-            </section>
-
-            <!-- <section id="fe-project" data-aos="fade-left">
-                <h3 class="sub-title">II.II. UI/UX Project</h3>
-                <a href="https://www.figma.com/file/WHsoPXRXhMdUkzZiSNl4KU/Aristotle-Institute-Landing-Page" target="_blank" class="project" id="aristotle-institute">
-                    <h4 class="project-name">Aristotle Institute <span>(2021)</span></h4>
-                    <p class="project-desc">Made with Figma</p>
-                </a>
-                <a href="https://www.figma.com/file/bMdPww7iWEHNgMF4xo55VI/Above-The-Fold-Collection?node-id=0%3A1" target="_blank" class="project" id="atf-collection">
-                    <h4 class="project-name">Above The Fold Collection <span>(2021)</span></h4>
-                    <p class="project-desc">Made with Figma</p>
-                </a>
-                <a href="https://www.figma.com/file/bUfYjUREXmJKLOIfDccv0P/Ron-88-Landing-Page?node-id=0%3A1" target="_blank" class="project" id="ron88">
-                    <h4 class="project-name">RON88 <span>(2020)</span></h4>
-                    <p class="project-desc">Made with Figma</p>
-                </a>
-            </section> -->
-
-            <!-- Back-End Project -->
-            <section id="be-project" data-aos="fade-right">
-                <h3 class="sub-title">II.II. Back-End Project</h3>
-                <a href="https://github.com/rocketweaver/pembayaran-spp.git" class="project" id="pembayaran-spp">
-                    <h4 class="project-name">Pembayaran SPP <span>(2021)</span></h4>
-                    <p class="project-desc">Made with Laravel 8</p>
-                </a>
-                <a href="https://github.com/rocketweaver/TicketConcertApp" target="_blank" class="project" id="ticket-concert">
-                    <h4 class="project-name">Ticket Concert App <span>(2023)</span></h4>
-                    <p class="project-desc">Made with Java</p>
-                </a>
-                <a href="https://github.com/rocketweaver/TanyaKode" target="_blank" class="project" id="tanyakode">
-                    <h4 class="project-name">TanyaKode <span>(2023)</span></h4>
-                    <p class="project-desc">Made with JSP</p>
-                </a>
-            </section>
-            <img src="asset/img/pattern/pattern_2.svg" class="pattern" id="wave-3" alt="">
+          </a>
         </section>
 
-        <!-- Contact -->
-        <!-- <section class="container" id="contact">
+        <!-- Back-End Project -->
+        <section id="be-project" data-aos="fade-right">
+          <!-- <h3 class="sub-title">II.II. Back-End Project</h3> -->
+          <a
+            href="https://rocketweaver.github.io/deliziosa_resto-reservation/"
+            target="_blank"
+            class="project"
+            id="deliziosa"
+          >
+            <h4 class="project-name">Deliziosa <span>(2024)</span></h4>
+            <p class="project-desc">Made with Bootstrap 5, JS, and PHP</p>
+          </a>
+          <a
+            href="https://github.com/rocketweaver/pembayaran-spp.git"
+            class="project"
+            id="pembayaran-spp"
+          >
+            <h4 class="project-name">Pembayaran SPP <span>(2021)</span></h4>
+            <p class="project-desc">Made with Laravel 8</p>
+          </a>
+          <a
+            href="https://github.com/rocketweaver/TicketConcertApp"
+            target="_blank"
+            class="project"
+            id="ticket-concert"
+          >
+            <h4 class="project-name">Ticket Concert App <span>(2023)</span></h4>
+            <p class="project-desc">Made with Java</p>
+          </a>
+          <a
+            href="https://github.com/rocketweaver/TanyaKode"
+            target="_blank"
+            class="project"
+            id="tanyakode"
+          >
+            <h4 class="project-name">TanyaKode <span>(2023)</span></h4>
+            <p class="project-desc">Made with JSP</p>
+          </a>
+        </section>
+        <img
+          src="asset/img/pattern/pattern_2.svg"
+          class="pattern"
+          id="wave-3"
+          alt=""
+        />
+      </section>
+
+      <!-- Contact -->
+      <!-- <section class="container" id="contact">
             <div class="title" id="contact-title">Contact</div>
             <form action="#" id="contact-form">
                 <div class="form-group">
@@ -123,16 +171,28 @@
 
     <!-- Footer -->
     <footer class="container" id="footer">
-        <p id="copyright">&copy;2021, Arbhy Adityabrahma</p>
-        <ul id="icon-list">
-            <li class="icon-item" id="linkedin"><a href="https://www.linkedin.com/in/arbhyadityab/" class="icon-link"><img src="asset/img/icons/iconmonstr-linkedin-3 1.svg" class="icon-img"></a></li>
-            <li class="icon-item" id="github"><a href="https://github.com/rocketweaver" class="icon-link"><img src="asset/img/icons/iconmonstr-github-3 1.svg" class="icon-img"></a></li>
-        </ul>
+      <p id="copyright">&copy;2024, Arbhy Adityabrahma</p>
+      <ul id="icon-list">
+        <li class="icon-item" id="linkedin">
+          <a href="https://www.linkedin.com/in/arbhyadityab/" class="icon-link"
+            ><img
+              src="asset/img/icons/iconmonstr-linkedin-3 1.svg"
+              class="icon-img"
+          /></a>
+        </li>
+        <li class="icon-item" id="github">
+          <a href="https://github.com/rocketweaver" class="icon-link"
+            ><img
+              src="asset/img/icons/iconmonstr-github-3 1.svg"
+              class="icon-img"
+          /></a>
+        </li>
+      </ul>
     </footer>
 
     <!-- Load some JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="asset/js/script.js"></script>
-</body>
+  </body>
 </html>

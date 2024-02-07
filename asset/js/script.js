@@ -46,4 +46,19 @@ $(document).ready(function(){
         });
         }
     });
+
+    $('.project-item').on('click', function() {
+        $('.project-item').removeClass('project-active');
+        $(this).addClass('project-active');
+    });
+
+    $('.fe-btn').on('click', function() {
+        $('#be-project').hide();
+        $('#fe-project').show();
+    });
+
+    $('.be-btn').on('click', function() {
+        $('#fe-project').hide();
+        $('#be-project').show();
+    });
 });

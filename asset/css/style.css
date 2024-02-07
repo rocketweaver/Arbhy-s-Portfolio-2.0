@@ -243,15 +243,28 @@ a {
 }
 
 #fe-project {
-  margin-top: 80px;
+  margin-top: 60px;
+  display: block;
+}
+
+#be-project {
+  display: none;  
 }
 
 .project {
+  display: block;
   padding: 2em 0;
   color: var(--white);
   border-bottom: 3px solid var(--white);
   -webkit-transition: background .5s ease-in-out, padding .75s ease-in-out;
   transition: background .5s ease-in-out, padding .75s ease-in-out;
+  animation: shown .3s ease-in-out;
+  position: relative;
+}
+
+@keyframes shown {
+  from{opacity: 0; right: 80px;}
+  to{opacity: 1; right: 0;}
 }
 
 .project:hover {
@@ -272,7 +285,32 @@ a {
   text-align: right;
 }
 
-#minima, #aristotle-institute, #pembayaran-spp {
+.project-item {
+  margin-top: 40px;
+  background: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-size: medium;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.project-item:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.project-active {
+  background: var(--white);
+  color: var(--black);
+}
+
+.project-item:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.project:nth-of-type(1) {
   margin-top: 40px;
 }
 
@@ -443,7 +481,7 @@ a {
   width: 30px;
   top: 0;
   -webkit-transition: top .25s ease-in-out;
-  transition: top .25s ease-in-out;
+  transition: top .2s ease-in-out;
 }
 
 .icon-img:hover {
