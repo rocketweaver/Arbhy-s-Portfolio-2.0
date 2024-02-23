@@ -322,6 +322,10 @@ a {
   background: url("../img/project/phoenix.PNG");
 }
 
+#notto:hover {
+  background: url("../img/project/Notto.JPG");
+}
+
 #aristotle-institute:hover {
   background: url("../img/project/aristotle_institute.png");
 }
